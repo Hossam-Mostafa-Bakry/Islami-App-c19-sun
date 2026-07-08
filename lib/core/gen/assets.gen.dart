@@ -33,22 +33,31 @@ class $AssetsIconsGen {
   SvgGenImage get sebhaSelectedIcn =>
       const SvgGenImage('assets/icons/sebha_selected_icn.svg');
 
+  /// File path: assets/icons/sura_number_frame_icn.png
+  AssetGenImage get suraNumberFrameIcn =>
+      const AssetGenImage('assets/icons/sura_number_frame_icn.png');
+
   /// File path: assets/icons/time_selected_icn.svg
   SvgGenImage get timeSelectedIcn =>
       const SvgGenImage('assets/icons/time_selected_icn.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [
+  List<dynamic> get values => [
     hadithSelectedIcn,
     quranSelectedIcn,
     radioSelectedIcn,
     sebhaSelectedIcn,
+    suraNumberFrameIcn,
     timeSelectedIcn,
   ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/bottom_decoration_img.png
+  AssetGenImage get bottomDecorationImg =>
+      const AssetGenImage('assets/images/bottom_decoration_img.png');
 
   /// File path: assets/images/hadith_backgropund_img.png
   AssetGenImage get hadithBackgropundImg =>
@@ -58,6 +67,14 @@ class $AssetsImagesGen {
   AssetGenImage get headerImg =>
       const AssetGenImage('assets/images/header_img.png');
 
+  /// File path: assets/images/left_corner_img.png
+  AssetGenImage get leftCornerImg =>
+      const AssetGenImage('assets/images/left_corner_img.png');
+
+  /// File path: assets/images/most_recent_img.png
+  AssetGenImage get mostRecentImg =>
+      const AssetGenImage('assets/images/most_recent_img.png');
+
   /// File path: assets/images/quran_background_img.png
   AssetGenImage get quranBackgroundImg =>
       const AssetGenImage('assets/images/quran_background_img.png');
@@ -65,6 +82,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/radio_background_img.png
   AssetGenImage get radioBackgroundImg =>
       const AssetGenImage('assets/images/radio_background_img.png');
+
+  /// File path: assets/images/right_corner_img.png
+  AssetGenImage get rightCornerImg =>
+      const AssetGenImage('assets/images/right_corner_img.png');
 
   /// File path: assets/images/splash_img.png
   AssetGenImage get splashImg =>
@@ -80,10 +101,14 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    bottomDecorationImg,
     hadithBackgropundImg,
     headerImg,
+    leftCornerImg,
+    mostRecentImg,
     quranBackgroundImg,
     radioBackgroundImg,
+    rightCornerImg,
     splashImg,
     tasbeehBackgroundImg,
     timerBackgroundImg,

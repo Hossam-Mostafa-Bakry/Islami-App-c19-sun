@@ -6,6 +6,16 @@ abstract class AppThemeManager {
   static ThemeData getThemeData() => ThemeData(
     primaryColor: AppColors.primary,
     scaffoldBackgroundColor: AppColors.black,
+    appBarTheme: AppBarThemeData(
+      elevation: 0,
+      backgroundColor: Colors.transparent,
+      iconTheme: IconThemeData(color: AppColors.primary),
+      titleTextStyle: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+        color: AppColors.primary,
+      ),
+    ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       showUnselectedLabels: false,
       backgroundColor: AppColors.primary,
